@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civic Review Portal - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="gradient-bg text-white">
+        <div class="container">
+            <h1 class="text-xl font-bold">Civic Review Portal</h1>
+            <div class="flex flex-col md:flex-row gap-2 items-center">
+                <a href="main.html">Dashboard</a>
+                <a href="submitfeedback.html">Submit Feedback</a>
+                <a href="leaderboard.html">Leaderboard</a>
+                <a href="#" onclick="logout()">Logout</a>
+                <a href="profile.html" class="profile-circle" title="Profile">
+                    <img src="profile.jpeg" alt="Profile Icon">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h2>Dashboard</h2>
+            <div class="chart-grid">
+                <div class="card">
+                    <h3>Service Ratings</h3>
+                    <img src="growth.jpg" alt="Bar Chart" class="chart-placeholder">
+                </div>
+                <div class="card">
+                    <h3>Feedback Distribution</h3>
+                    <img src="pie.png" alt="Pie Chart" class="chart-placeholder">
+                </div>
+            </div>
+            <div class="card">
+                <h3>Feedback Locations</h3>
+                <img src="rate.jpg" alt="Map" class="map-placeholder">
+            </div>
+            <div class="card">
+                <h3>Your Progress</h3>
+                <p class="text-gray-600 mb-2">Points: 50</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 60%"></div>
+                </div>
+                <div class="flex gap-4 mt-4">
+                    <img src="https://images.unsplash.com/photo-1628260410200-cb8876449e3b?q=80&w=100&auto=format&fit=crop" alt="Top Reviewer Badge" class="badge" title="Top Reviewer">
+                    <img src="https://images.unsplash.com/photo-1579463148228-138296ac3b98?q=80&w=100&auto=format&fit=crop" alt="Community Star Badge" class="badge" title="Community Star">
+                </div>
+            </div>
+            <div class="card">
+                <h3>Recent Feedback</h3>
+                <div class="feedback-item">
+                    <span class="service-icon">🗑️</span>
+                    <div>
+                        <p class="font-semibold text-gray-800">Sanitation</p>
+                        <p class="text-gray-600">Rating: 4/5</p>
+                        <p class="text-gray-600">Clean streets!</p>
+                        <p class="text-sm text-gray-500">Nagamallithota junction</p>
+                    </div>
+                </div>
+                <div class="feedback-item">
+                    <span class="service-icon">💡</span>
+                    <div>
+                        <p class="font-semibold text-gray-800">Electricity</p>
+                        <p class="text-gray-600">Rating: 3/5</p>
+                        <p class="text-gray-600">Frequent outages.</p>
+                        <p class="text-sm text-gray-500">Nagamallithota junction</p>
+                    </div>
+                </div>
+                <div class="feedback-item">
+                    <span class="service-icon">💧</span>
+                    <div>
+                        <p class="font-semibold text-gray-800">Water</p>
+                        <p class="text-gray-600">Rating: 5/5</p>
+                        <p class="text-gray-600">Great supply!</p>
+                        <p class="text-sm text-gray-500">Nagamallithota junction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'939703cc4a7c7b9b',t:'MTc0NjE4MzYyNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>
